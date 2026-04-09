@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Cyber-Compact - Mbayang Samb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">M.S</div>
+            <button class="nav-link active" onclick="basculerVue('accueil')">Bienvenue</button>
+            <button class="nav-link" onclick="basculerVue('biographie')">Qui suis-je ?</button>
+            <button class="nav-link" onclick="basculerVue('stages')">Parcours Pro</button>
+            <button class="nav-link" onclick="basculerVue('skills')">Compétences</button>
+        </nav>
+
+        <main class="main-content">
+            
+            <section id="accueil" class="view-panel active">
+                <div class="ACCUEIL-BOX">
+                    <h1 class="cyber-title">Ndeye Mbayang Samb</h1>
+                    <p class="cyber-highlight">Étudiante en L3 SRT & Cybersécurité</p>
+                    <div class="CITATION-box">
+                        <p>"La technologie est le moteur, la sécurité est le frein qui nous permet de rouler vite en toute confiance."</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="biographie" class="view-panel">
+              <h1 id="mon-nom">Ndeye Mbayang Samb</h1>
+            <h2 class="cyber-highlight">Systèmes, Réseaux et Télécommunications</h2>
+            
+            <div class="bio-text"><br>
+                <h3>Qui suis-je ?</h3> <br>
+                <p>
+                    Je suis <b>Ndeye Mbayang Samb</b>, étudiante passionnée en troisième année de Licence 
+                    Systèmes, Réseaux et Télécommunications (SRT) à l'École Supérieure Polytechnique (ESP) de Dakar. 
+                    Mon parcours, marqué par l'obtention d'un BTS en Télécommunications, est guidé par une curiosité 
+                    insatiable pour l'architecture des réseaux et la protection des données.
+                </p> <br>
+
+                <h3>Mon Expertise Technique</h3>
+                <p>
+                    Spécialisée dans la conception et la sécurisation des infrastructures, je maîtrise des outils de 
+                    simulation avancés comme <b>GNS3</b> et <b>Cisco</b>, ainsi que les technologies de 
+                    conteneurisation telles que <b>Docker</b>. Mon approche de la cybersécurité ne se limite pas à la défense ; 
+                    elle inclut une compréhension profonde des protocoles de routage, du pentesting et des enjeux de la 
+                    cryptographie moderne.
+                </p> <br>
+
+                <h3>Ma Vision</h3>
+                <p>
+                    Dans un monde de plus en plus connecté, la sécurité est le pilier de l'innovation. Mon objectif est de 
+                    devenir une experte capable de bâtir des réseaux résilients et d'anticiper les menaces de demain. 
+                    Alliant rigueur technique et créativité, je m'efforce de transformer des concepts complexes en 
+                    solutions technologiques élégantes et robustes.
+                </p> <br>
+
+                <p class="signature"><i>Bienvenue dans mon univers, où la technologie rencontre la sécurité.</i></p>
+            </div>
+            </section>
+
+            <section id="stages" class="view-panel">
+                <h3 class="cyber-title-sm">Expériences Techniques</h3>
+                <div id="stages-container" class="stages-compact-grid">
+                    </div>
+            </section>
+
+            <section id="skills" class="view-panel">
+                <h3 class="cyber-title-sm">Stack Technique & Projets</h3>
+                <div id="skills-grid" class="skills-compact-grid">
+                    </div>
+                <div id="skill-showcase" class="skill-detail-panel">
+                    <p>Sélectionnez une compétence </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer-sombre">
+        <div class="footer-wrapper">
+            <div class="footer-col">
+                <h4 class="cyber-title-sm"> Ndeye Mbayang Samb</h4>
+                <p>Étudiante SRT - ESP Dakar</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="cyber-title-sm">Coordonnées</h4>
+                <p>📧 ndeyembayangsamb@esp.sn</p>
+                <p>📞 77 616 83 25</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="cyber-title-sm">Réseaux</h4>
+                <a href="https://www.linkedin.com/in/mbayang-samb-465136359/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechFolio developed by Ndeye Mbayang Samb</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

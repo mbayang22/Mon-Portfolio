@@ -1,0 +1,187 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Time new roman',sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: Black;
+    color: GhostWhite;
+    font-size: 18px;
+    
+    
+}
+
+
+.app-container {
+    display: flex;
+    flex: 1;
+}
+
+
+.sidebar {
+    width: 200px;
+    min-height: 2000px;
+    width   : 220px;
+    margin-right: 360px;
+    background-color: rgba(17, 17, 17, 0.9);
+    border-right: 2px solid DeepPink;
+    position: fixed;
+    padding: 20px ; 
+    z-index: 10;
+
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    color: White;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px; 
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 20, 147, 0.2);
+    transition: 0.3s;
+}
+
+.nav-link.active {
+    color: DeepPink;
+    border-bottom: 1px solid DeepPink;
+    padding-left: 15px;
+}
+
+/* Zone de contenu principale  */
+.main-content {
+    margin-left: 240px; 
+    padding: 20px; 
+    width: 100%;
+    min-height: 500px; 
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('CYBER.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.view-panel {
+    display: none; 
+    margin-top: 20px; 
+}
+
+.view-panel.active {
+    display: block; 
+    animation: fadeIn 0.4s;
+}
+
+/* Typographie Compacte */
+.cyber-title {
+    color: DeepPink;
+    font-size: 40px; 
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cyber-title-sm {
+    color: DeepPink;
+    font-size: 24px;
+    border-bottom: 2px solid DeepPink;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.cyber-highlight {
+    color: HotPink;
+    font-size: 1.2em;
+}
+
+/* Accueil (Hero Compact) */
+.ACCUEIL-BOX {
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CITATION-box {
+    margin-top: 20px; 
+    padding: 20px;
+    background-color: rgba(255, 20, 147, 0.05);
+    border: 1px solid rgba(255, 20, 147, 0.1);
+    font-style: italic;
+    color: LightPink;
+}
+
+.bio-text {
+    line-height: 25px; 
+    max-width: 700px;
+}
+
+
+.stages-compact-grid, .skills-compact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-top: 15px;
+    padding: 20px;
+    
+}
+
+.skill-btn {
+    background-color: rgb(54, 30, 58);
+    color: White;
+    border: 1px solid DeepPink;
+    padding: 15px 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.skill-btn:hover { background-color: DeepPink; }
+
+.skill-detail-panel {
+    margin-top: 20px; 
+    padding: 20px;
+    border: 1px solid rgba(255, 20, 147, 0.1);
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 8px;
+}
+
+
+.skill-img {
+    max-width: 350px;
+    border-radius: 8px;
+    border: 1px solid DeepPink;
+    margin-top: 15px;
+}
+
+
+.footer-sombre {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 20, 147, 0.1);
+    z-index: 5;
+    margin-top: 0px; 
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 240px; 
+}
+
+.footer-col h4 { color: DeepPink; margin-bottom: 5px; }
+.footer-col a { color: White; text-decoration: none; font-weight: bold; }
+.footer-bottom { text-align: center; margin-top: 15px; color: Gray; font-size: 0.8em;}
+
+/* Animation */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
